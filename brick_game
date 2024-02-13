@@ -83,14 +83,14 @@ void print(int a){
     glRasterPos2f(490, 100);
     stringstream ss3;
     ss3 << previousScore;
-    string prevScore = "Previous score: "+ss3.str();
+    string prevScore = "Previous Score: "+ss3.str();
     for(int i = 0; i < prevScore.length(); i++){
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, prevScore[i]);
     }
     glRasterPos2f(490, 130);
     stringstream ss4;
     ss4 << highestScore;
-    string highScore = "Highest score: "+ss4.str();
+    string highScore = "Highest Score: "+ss4.str();
     for(int i = 0; i < highScore.length(); i++){
         glutBitmapCharacter(GLUT_BITMAP_HELVETICA_12, highScore[i]);
     }
@@ -105,7 +105,8 @@ void message(bool a){
         glRasterPos2f(20, 400);
         stringstream ss;
         ss << previousScore;
-        string s = "Game over. Your score: "+ss.str()+". Click to start new game.";
+        string s = "Game over. Your Score: "+ss.str()+". Click to start New G
+ame.";
         int len = s.length();
         for(int i = 0; i < len; i++){
             glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, s[i]);
