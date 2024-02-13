@@ -40,11 +40,11 @@ void createBricks(){
         }
         if (bricksArray[i].isAlive){
 
-        bricksArray[i].x = brickX;
+       bricksArray[i].x = brickX;
         bricksArray[i].y = brickY;
         bricksArray[i].width = 38.66;
         bricksArray[i].height = 10;
-        bricksArray[i].isAlive = true;
+        bricksArray[i].isAlive = true; 
 
     }
     glColor3ub(0,0,255);
